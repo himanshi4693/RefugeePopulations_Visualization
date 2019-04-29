@@ -5,16 +5,17 @@
   <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
   <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
   <link rel="stylesheet" href="./static/lib/css/dc.css">
+  <link rel="stylesheet" href="./static/lib/css/d3-ez.css">
   <link rel="stylesheet" href="./static/css/custom.css">
 
 
 </head>
 <body class="application">
 
-  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #491065;border: none;" role="navigation">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="./">Donorschoose Dashboard</a>
+      <div class="navbar-header" style="width: 100%;text-align: center;">
+        <a class="navbar-brand" href="./" style="font-size: 16px; text-align: center;display: inline-block;width: 100%;">Refugee Population Dashboard</a>
       </div>
     </div>
   </div>
@@ -30,7 +31,7 @@
           <div class="col-sm-12">
             <div class="chart-wrapper">
               <div class="chart-title">
-                Number of Donations
+                Year-wise Refugee Population
               </div>
               <div class="chart-stage">
                 <div id="time-chart"></div>
@@ -39,31 +40,18 @@
           </div>
           <!-- Time Chart --> 
 
-          <!-- Resources Pie -->
-          <div class="col-sm-6">
+          <!-- Pi3 Chart --> 
+          <div class="col-sm-12">
             <div class="chart-wrapper">
               <div class="chart-title">
-                Resources Type
+                Distribution based on Origin Countries(top 5)
               </div>
               <div class="chart-stage">
-                <div id="resource-type-row-chart"></div>
+                <div id="pie-chart"></div>
               </div>
             </div>
           </div>
-          <!-- Resources Pie -->
-
-          <!-- Poverty Pie -->
-          <div class="col-sm-6">
-            <div class="chart-wrapper">
-              <div class="chart-title">
-                Poverty Level
-              </div>
-              <div class="chart-stage">
-                <div id="poverty-level-row-chart"></div>
-              </div>
-            </div>
-          </div>
-          <!-- Poverty Pie -->
+          <!-- Pie Chart --> 
 
         </div>
       </div>
@@ -72,7 +60,7 @@
       <div class="col-sm-6">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Distribution of Donations
+            Global Distribution of Refugees 
           </div>
           <div class="chart-stage">
             <div id="us-chart"></div>
@@ -81,38 +69,13 @@
       </div>
       <!-- Map -->
 
-      <!-- Metric 1 -->
-      <div class="col-sm-3">
-        <div class="chart-wrapper">
-          <div class="chart-title">
-            Total Number of Donations
-          </div>
-          <div class="chart-stage">
-            <div id="number-projects-nd"></div>
-          </div>
-        </div>
-      </div>
-      <!-- Metric 1 -->
-
-      <!-- Metric 2 -->
-      <div class="col-sm-3">
-        <div class="chart-wrapper">
-          <div class="chart-title">
-            Total Donations in USD
-          </div>
-          <div class="chart-stage">
-            <div id="total-donations-nd"></div>
-          </div>
-        </div>
-      </div>
-      <!-- Metric 2 -->
+      
 
     </div>
 
   </div>
 
     <hr>
-    <p class="small text-muted">Built with &#9829; by <a href="https://keen.io">Keen IO</a></p>
 
   </div>
 
@@ -122,7 +85,7 @@
   <script src="./static/lib/js/d3.js"></script>
   <script src="./static/lib/js/dc.js"></script>
   <script src="./static/lib/js/queue.js"></script>
-
+  <script src="./static/lib/js/d3-ez.min.js"></script>
 
   <script src="./static/lib/js/keen.min.js"></script>
   <script src='./static/js/graphs.js' type='text/javascript'></script>
