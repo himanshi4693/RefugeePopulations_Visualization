@@ -1,5 +1,7 @@
 # Refugee Populations across Europe - Visualization
 
+![sample](https://user-images.githubusercontent.com/38923623/56874648-a677e200-6a3b-11e9-9791-25670ef22150.gif)
+
 
 ## Getting started
 
